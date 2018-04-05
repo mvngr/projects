@@ -1,0 +1,198 @@
+body{
+	margin: 0;
+	font-size: 14pt;
+	font-family: 'Rubik', sans-serif;
+}
+p{
+	float: left;
+}
+.fix{
+	clear: both;
+}
+#content{
+	width: 60vw;
+	margin: 0 20vw;
+	background: #fff;
+	min-height: 50vh;
+	padding: 1em 0;
+}
+@media screen and (max-width: 1024px){
+	#content{
+		width: 100vw;
+		margin: 0;
+	}
+}
+#content > p {
+	padding: 1em;
+	margin: 0;
+}
+.help{
+	background: repeating-linear-gradient(45deg, #f71, #f71 10px, #f61 10px, #f61 20px);
+}
+.help, .quote{
+	color: white;
+	float: left;
+	width: calc( 100% - 2em );
+	height: auto;
+	padding: 1em;
+	display: flex;
+	margin: 1em 0;
+	text-align: center;
+}
+.help > * {
+	float: left;
+	font-size: 1.5em;
+	font-weight: 400;
+	margin: auto;
+}
+.help > a{
+	padding: 0.5em 2em;
+	border: 3px solid #fff;
+	border-radius: 2em;
+	color: white;
+	outline: none;
+	text-decoration: none;
+}
+.help > a:hover{
+	background-color: rgba(0,0,0,0.2);
+}
+.help > a:active{
+	background-color: rgba(0,0,0,0.5);
+}
+.quote{
+	background: repeating-linear-gradient(45deg, #99f, #99f 10px, #98f 10px, #98f 20px);
+	font-family: 'Pacifico', cursive;	
+	font-size: 1.5em;		
+}
+.links{
+	width: 100%;
+	height: 3em;
+	display: flex;
+	margin: 1em 0;
+}
+.links p {
+	float: none;
+}
+.links a {
+	width: calc(100% / 3);
+	height: 3em;
+	margin: auto;
+	text-align: center;
+	outline: none;
+	color: white;
+	text-decoration: none;
+	font-weight: 600;
+	font-size: 1em;
+}
+#fb{
+	background: repeating-linear-gradient(45deg, #36a, #36a 10px, #37b 10px, #37b 20px);
+}
+#inst{
+	background: repeating-linear-gradient(45deg, #b46, #b46 10px, #b35 10px, #b35 20px);
+}
+.catalog{
+	float: right;
+	display: block;
+	background-color: #eee;
+	height: auto;
+	min-height: 20vw;
+}
+.catalog > .item {
+	float: left;
+	width: calc( 15em - 1em);
+	margin: 0.5em;
+	height: 19em;
+	background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 1em rgba(0,0,0,0.3);
+}
+.catalog > .item .unaviable{
+	position: relative;
+	width: 14em;
+	height: 19em;
+	opacity: 0.7;
+	background: repeating-linear-gradient(45deg, #444, #444 10px, #666 10px, #666 20px);
+}
+.catalog > .item .unaviable::before{
+	content: "Недоступно";
+	position: relative;
+	top: 5em;
+	left: calc( 50% - 3em );
+	color: rgba(255,255,255,0.6);
+	font-size: 1.5em;
+	text-align: center;
+	width: 14em;
+}
+.cost{
+	width: calc( 14em - 4em);
+	padding: 1em;
+	background-color: white;
+	float: left;
+	border-radius: 2em;
+	font-size: 1em;
+	background: linear-gradient(110deg, #fff calc(50% - 1px), #319b31 50%);
+	text-align: center;
+	position: relative;
+	top: calc(80% - 2em);
+	left: 1em;
+	box-shadow: 0 0 1em rgba(0,0,0,0.3);
+}
+.cost:hover{
+	background: linear-gradient(110deg, #f5f5f5 calc(50% - 1px), #282 50%);
+}
+.cost > .old{
+	color: black;
+	text-decoration: line-through;
+	padding-left: 1vw;
+	float: left;
+}
+.cost > .new{
+	font-weight: 700;
+	color: white;
+	padding-right: 1vw;
+	float: right;
+}
+.cost > .old::after, .cost > .new::after {
+	content: "₽";
+}
+.clipped {
+    background: url(https://floristxpress.com/blog/wp-content/uploads/2016/09/Red-Roses-beautiful-Arrangment.jpg) no-repeat center center;
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 2em;
+    /* -webkit-background-clip обрезает фон элемента по контуру текста */
+    -webkit-text-fill-color: transparent; /* переопределяет цвет текста с белого на прозрачный в браузерах на webkit */
+    -webkit-background-clip: text;
+    font-size: 3em;
+    font-weight: 900;
+}
+.schedule{
+	width: 100%;
+	float: left;
+	font-size: 14pt;
+	font-family: 'Rubik', sans-serif;
+}
+.schedule > .right {
+	width: calc( 50% - 2em);
+	float: right;
+	text-align: right;
+	margin: 0;
+	padding: 0.5em;
+}
+.schedule > .right  p {
+	width: calc( 100% - 1em );
+	margin: 0.25em;
+}
+.schedule > .right span {
+	color: #666;
+}
+.schedule > .right a {
+	outline: none;
+	color: #666;
+	text-decoration: none;
+}
+.schedule > .right a:hover{
+	color: #999;
+}
